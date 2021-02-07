@@ -4,6 +4,8 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   margin: 0;
+
+ 
 }
 
 .list {
@@ -13,12 +15,25 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1172px;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline: 2px solid transparent;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  
+  
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+
+
 }
 
 a {

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>adaptive</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,7 +15,7 @@
   <body>
     <!--Шапка-->
     <header>
-      <div class="container-header container">
+      <div class="container-header container ">
         <nav class="container-header__nav">
           <a href="./index.html">
             <img src="./images/WebStudio.png" alt="logo" />
@@ -52,7 +53,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero container list">
         <h1 class="hero__title list">
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИСНЕСА
         </h1>
@@ -60,52 +61,52 @@
       </section>
       <!--наші переваги-->
       <section class="benefits list">
-        <div class="benefits__container">
+        <div class="container">
           <h2 class="visualy-hidden list">наші переваги</h2>
           <ul class="benefits__list list">
-            <li class="item">
-              <div class="benefits__background">
+            <li class="item list">
+              <div class="benefits__background list ">
                 <svg class="benefits__icons">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Внимание к деталям</h3>
+              <h3 class="benefits__title list">Внимание к деталям</h3>
               <p class="benefits__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item list">
               <div class="benefits__background">
                 <svg class="benefits__icons">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Пунктуальность</h3>
+              <h3 class="benefits__title list">Пунктуальность</h3>
               <p class="benefits__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
+            <li class="item list">
               <div class="benefits__background">
                 <svg class="benefits__icons">
                   <use href="./images/symbol-defs.svg#icon-computer"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Планирование</h3>
+              <h3 class="benefits__title list">Планирование</h3>
               <p class="benefits__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
+            <li class="item list">
               <div class="benefits__background">
                 <svg class="benefits__icons">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits__title">Современные технологии</h3>
+              <h3 class="benefits__title list">Современные технологии</h3>
               <p class="benefits__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -136,7 +137,7 @@
       </section>
       <!--Наша команда-->
       <section class="team list">
-        <div class="team__container">
+        <div class=" container">
           <h2 class="team__title list">Наша команда</h2>
           <ul class="team__work list">
             <li class="item list">
@@ -144,7 +145,7 @@
                 src="./images/img(3).jpg"
                 width="260"
                 alt="Игорь Демьяненко"
-              /><br />
+              />
               <div class="team__staff list">
                 <h3 class="team__name list">Игорь Демьяненко</h3>
                 <p class="team__positions">Product Designer</p>
@@ -202,7 +203,7 @@
                 src="./images/img(4).jpg"
                 width="261"
                 alt="Ольга Репина"
-              /><br />
+              />
               <div class="team__staff list">
                 <h3 class="team__name list">Ольга Репина</h3>
                 <p class="team__positions">Frontend Developer</p>
@@ -260,7 +261,7 @@
                 src="./images/img(5).jpg"
                 width="260"
                 alt="Николай Тарасов"
-              /><br />
+              />
               <div class="team__staff list">
                 <h3 class="team__name list">Николай Тарасов</h3>
                 <p class="team__positions">Marketing</p>
@@ -318,7 +319,7 @@
                 src="./images/img(6).jpg"
                 width="260"
                 alt="Михаил Ермаков"
-              /><br />
+              />
               <div class="team__staff list">
                 <h3 class="team__name list">Михаил Ермаков</h3>
                 <p class="team__positions">UI Designer</p>
@@ -375,7 +376,7 @@
         </div>
       </section>
       <!--наші клієнти-->
-      <section class="clients">
+      <section class="clients container">
         <h3 class="clients__title list">Постоянные клиенты</h3>
         <ul class="clients__icons list">
           <li class="item">
@@ -424,17 +425,19 @@
       </section>
     </main>
     <footer>
-      <div class="footer__container">
-        <div>
+      <div class="container footer__container">
+       
+          <div class="footer__info">
           <a href="./index.html"
             ><span class="web">Web</span><span class="studio">Studio</span>
           </a>
-          <address>
-            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a><br />
+          <address class="footer__adress">
+            <p class="footer__location">г. Киев, пр-т Леси Украинки, 26</p>
+            
             <a class="footer__email" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
-            >
+            ><br>
+            <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
         </div>
         <div class="footer__end">
@@ -486,11 +489,12 @@
             </li>
           </ul>
         </div>
+      
         <div class="footer__form">
           <h3 class="footer__join list">Подпишитесь на рассылку</h3>
-          <form>
+          <form class="footer__area">
             <input class="footer__form-input" type="email" placeholder="E-mail" />
-
+            
             <button class="footer__form-button" type="submit">
               Подписаться
               <svg class="footer__form-icon" width="24" height="20">
@@ -502,6 +506,9 @@
       </div>
     </footer>
 
+
+
+    
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal list">
         <button class="modal-btn list" data-close-modal>

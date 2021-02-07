@@ -2,38 +2,16 @@
 
 footer {
   background: #2f303a;
-  
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 60px 0 60px 0;
- 
- 
-
-  @media screen and (min-width: $desktop) {
-    padding: 60px 0px;
-
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
 
 .footer__container {
-  max-width: 1600px;
-  text-align: center;
-      
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-
-  }
-
-  @media screen and (min-width: $desktop) {
-    text-align: start;
-    justify-content: space-around;
-  }
+  display: flex;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .web {
   font-family: "Raleway";
@@ -53,42 +31,10 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $primary-white-color;
-
 }
-
-
-
-.footer__info {
-  margin-bottom: 60px;
-
-      @media screen and (min-width: $tablet) {
-        margin-left: 61px;
-        margin-right: 165px;
-      }
-
-      @media screen and (min-width: $desktop) {
-        margin: 0;
-      }
-    
-
- 
-}
-
-.footer__adress {
+.footer__address {
   margin-top: 20px;
-  margin-bottom: 60px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 9px;
-  }
-}
-
-.footer__location {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -100,7 +46,7 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 60px;
+  margin-bottom: 9px;
 }
 
 .footer__email {
@@ -111,7 +57,7 @@ footer {
 }
 
 .footer__end {
-  margin-bottom: 60px;
+  margin-left: 70px;
 }
 
 .footer__join {
@@ -120,8 +66,6 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 20px;
 
   color: $primary-white-color;
@@ -129,23 +73,20 @@ footer {
 
 .footer-networks {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
 }
 
 .footer__social-links {
   display: flex;
   color: $primary-white-color;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   border: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-
+  justify-content: center;
+  align-items: center;
   margin-right: 10px;
 
   transition: background-color $time-transition $function-bezier,
@@ -162,45 +103,22 @@ footer {
   width: 20px;
   height: 20px;
   fill: currentColor;
-  align-items: center;
-  justify-content: center;
 }
-
-.footer__area {
-  display: block;
-  
- 
-}
-
 .footer__form {
-  
- 
+  margin-left: auto;
 }
 
 .footer__form-input {
   padding: 17px;
 
-  width: 100%;
+  width: 358px;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   color: $primary-white-color;
-
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-
   border-radius: 4px;
-  margin-bottom: 20px;
-  
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    min-width: 450px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 358px;
-    margin-bottom: 0;
-  }
- 
 }
 .footer__form-input::placeholder {
   display: flex;
@@ -227,8 +145,6 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   border: transparent;
-
-  
 }
 
 .footer__form-icon {
