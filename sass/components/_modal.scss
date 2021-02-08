@@ -17,13 +17,16 @@
 }
 
 .modal {
+  overflow-y: scroll;
+padding: 40px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  height: calc(100vh - 12vh - 12vh);
+  min-height: 590px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -32,6 +35,21 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform $time-transition $function-bezier;
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    height: auto;
+    min-height: 609px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -63,13 +81,10 @@
   }
 }
 
-.modal-form {
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
-}
+
 
 .modal-form-title {
+  
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;

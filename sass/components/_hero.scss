@@ -10,33 +10,87 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/mobile@2x.jpg);
+    url(../images/mobile@1x.jpg);
   background-position: center;
   background-size: cover;
+  // Для мобілки
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mobile@2x.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 
+// Для таблетки
   @media screen and (min-width: $tablet) {
     max-width: 768px;
     max-height: 400px;
-    }
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/tablet@1x.jpg);
+  background-position: center;
+  background-size: cover;
 
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet@2x.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  }
+
+
+  // Для десктопа
   @media screen and (min-width: $desktop) {
     max-width: 1600px;
     max-height: 600px;
     padding: 200px 0;
-  }
-}
+  
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/desktop@1x.jpg);
+  background-position: center;
+  background-size: cover;
 
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/desktop@2x.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  }
+
+}
 
 .hero__title {
   text-align: center;
-  
+
   color: $primary-white-color;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
- 
-  
 }
 
 /*Кнопка*/

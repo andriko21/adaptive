@@ -173,8 +173,11 @@ footer {
 }
 
 .footer__form {
-  
  
+ @media screen and (min-width:$tablet) and (max-width: 1160px){
+   margin-right: auto;
+   margin-left: auto;
+ }
 }
 
 .footer__form-input {
@@ -192,7 +195,7 @@ footer {
   border-radius: 4px;
   margin-bottom: 20px;
   
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1160px) {
     min-width: 450px;
   }
 
