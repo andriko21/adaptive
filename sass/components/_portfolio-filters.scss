@@ -6,15 +6,26 @@
 }
 
 .galery__container {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  
 }
 
 .galery__filters {
+ 
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .galery__filters .item {
+  margin-bottom: 15px;
   margin-right: 8px;
 }
 

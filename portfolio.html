@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -55,7 +56,7 @@
       <!--Фільтри-->
 
       <section class="galery list">
-        <div class="galery__container list">
+        <div class="container galery__container list ">
           <h2 class="visualy-hidden">Портфолио</h2>
           <ul class="galery__filters list">
             <li class="item">
@@ -79,7 +80,7 @@
           </ul>
         </div>
         <!--Приклади-->
-        <div class="examples__container list">
+        <div class="examples__container list container">
           <ul class="examples__list list">
             <li class="item list">
               <a href="#" class="examples__card-portfolio">
@@ -310,16 +311,19 @@
       </section>
     </main>
     <footer>
-      <div class="footer__container">
-        <div>
+      <div class="container footer__container">
+        <div class="footer__info">
           <a href="./index.html"
             ><span class="web">Web</span><span class="studio">Studio</span>
           </a>
-          <address>
-            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a><br />
+          <address class="footer__adress">
+            <p class="footer__location">г. Киев, пр-т Леси Украинки, 26</p>
+
             <a class="footer__email" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
+            ><br />
+            <a class="footer__tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a
             >
           </address>
         </div>
@@ -353,7 +357,7 @@
                 class="footer__social-links"
                 href="https://www.instagram.com/"
                 target="_blank"
-              >   
+              >
                 <svg class="footer__icons">
                   <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
@@ -372,10 +376,15 @@
             </li>
           </ul>
         </div>
+
         <div class="footer__form">
           <h3 class="footer__join list">Подпишитесь на рассылку</h3>
-          <form>
-            <input class="footer__form-input" type="email" placeholder="E-mail" />
+          <form class="footer__area">
+            <input
+              class="footer__form-input"
+              type="email"
+              placeholder="E-mail"
+            />
 
             <button class="footer__form-button" type="submit">
               Подписаться
