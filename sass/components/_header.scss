@@ -1,24 +1,18 @@
 /*шапка*/
 header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-
-  
 }
 
 .container-header {
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 .container-header__nav {
@@ -27,7 +21,13 @@ header {
 }
 
 .container-header__list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .container-header__list .item {
@@ -93,6 +93,18 @@ header {
   opacity: 1;
 }
 
+.container-adress {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
 .auth-nav__contacts {
   font-weight: 500;
   font-size: 14px;
@@ -118,11 +130,39 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
+
 .auth-nav .item {
   margin-left: 250px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
 }
 
 .auth-nav .item + .item {
   margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
+}
+.menu-burger {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
