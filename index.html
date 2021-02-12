@@ -61,23 +61,23 @@
           </ul>
         </address>
 
-       
+        <button class="button-menu" type="button" data-menu-button>
+          <svg class="button-menu__icon" width="40" height="40">
+            <use
+              class="button-menu__burger"
+              href="./images/symbol-defs.svg#icon-menu"
+            ></use>
+            <use
+              class="button-menu__cross"
+              href="./images/symbol-defs.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
       </div>
-      <button class="button-menu" type="button" data-menu-button>
-        <svg class="button-menu__icon" width="40" height="40">
-          <use
-            class="button-menu__burger"
-            href="./images/symbol-defs.svg#icon-menu"
-          ></use>
-          <use
-            class="button-menu__cross"
-            href="./images/symbol-defs.svg#icon-close"
-          ></use>
-        </svg>
-      </button>
+     
     </header>
 
-<!--mobile menu-->  
+    <!--mobile menu-->
     <div class="mobile-menu" data-menu>
       <nav class="navigation-menu">
         <ul class="menu list">
@@ -106,7 +106,7 @@
             >
           </li>
         </ul>
-       
+
         <ul class="social-menu list">
           <li class="social-menu__item">
             <a class="social-menu__link" href="#">Instagram</a>
@@ -212,11 +212,26 @@
           <h2 class="team__title list">Наша команда</h2>
           <ul class="team__work list">
             <li class="item list">
-              <img
-                src="./images/img(3).jpg"
-                width="260"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img(3).jpg
+                    ./images/deminko@2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img(3).jpg
+                ./images/deminko@2x.jpg"
+                />
+                <img
+                  src="./images/img(3).jpg"
+                  alt="Игорь Демьяненко"
+                  loading="lazy"
+                />
+              </picture>
+             
               <div class="team__staff list">
                 <h3 class="team__name list">Игорь Демьяненко</h3>
                 <p class="team__positions">Product Designer</p>
@@ -276,7 +291,25 @@
               </div>
             </li>
             <li class="item list">
-              <img src="./images/img(4).jpg" width="261" alt="Ольга Репина" />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img(4).jpg
+                    ./images/repina@2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img(4).jpg
+                ./images/repina@2x.jpg"
+                />
+                <img
+                  src="./images/img(4).jpg"
+                  alt="Ольга Репина"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__staff list">
                 <h3 class="team__name list">Ольга Репина</h3>
                 <p class="team__positions">Frontend Developer</p>
@@ -336,11 +369,25 @@
               </div>
             </li>
             <li class="item list">
-              <img
-                src="./images/img(5).jpg"
-                width="260"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img(5).jpg
+                    ./images/tarasov@2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img(5).jpg
+                ./images/tarasov@2x.jpg"
+                />
+                <img
+                  src="./images/img(5).jpg"
+                  alt="Николай Тарасов"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__staff list">
                 <h3 class="team__name list">Николай Тарасов</h3>
                 <p class="team__positions">Marketing</p>
@@ -400,7 +447,25 @@
               </div>
             </li>
             <li class="item list">
-              <img src="./images/img(6).jpg" width="260" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img(6).jpg
+                    ./images/ermakov @2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img(6).jpg
+                ./images/ermakov @2x.jpg"
+                />
+                <img
+                  src="./images/img(6).jpg"
+                  alt="Михаил Ермаков"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__staff list">
                 <h3 class="team__name list">Михаил Ермаков</h3>
                 <p class="team__positions">UI Designer</p>
@@ -658,6 +723,26 @@
       </div>
     </div>
     <script src="./js/menu.js">
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
+    <script>
       const refs = {
         openModalBtn: document.querySelector("[data-open-modal]"),
         closeModalBtn: document.querySelector("[data-close-modal]"),
