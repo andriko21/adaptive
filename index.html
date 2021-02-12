@@ -192,15 +192,69 @@
           <h2 class="our-work__feature list">Чем мы занимаемся</h2>
           <ul class="our-work__list list">
             <li class="item">
-              <img src="./images/img.jpg" width="370" alt="фото роботи1" />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img.jpg
+                    ./images/img@2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img.jpg
+                ./images/img@2x.jpg"
+                />
+                <img
+                  src="./images/img.jpg"
+                  alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="our-work__title list">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="item">
-              <img src="./images/img(1).jpg" width="370" alt="фото роботи2" />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img(1).jpg
+                    ./images/img(1)@2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img(1).jpg
+                ./images/img(1)@2x.jpg"
+                />
+                <img
+                  src="./images/img(1).jpg"
+                  alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ"
+                  loading="lazy"
+                />
+              </picture>
               <h3 class="our-work__title list">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="item">
-              <img src="./images/img(2).jpg" width="370" alt="фото роботи3" />
+              <picture>
+                <source
+                  media="(min-width:$desktop)"
+                  srcset="
+                    ./images/img(2).jpg
+                    ./images/img(2)@2x.jpg"
+                />
+                <source
+                  media="(min-width:$tablet)"
+                  srcset="
+                ./images/img(2).jpg
+                ./images/img(2)@2x.jpg"
+                />
+                <img
+                  src="./images/img(2).jpg"
+                  alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ"
+                  loading="lazy"
+                />
+              </picture> 
               <h3 class="our-work__title list">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </li>
           </ul>
