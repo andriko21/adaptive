@@ -2,7 +2,7 @@
 padding-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
-    padding: 94px 0 0;
+    padding: 94px 0 ;
 
   }
 }
@@ -55,13 +55,21 @@ padding-bottom: 60px;
   text-transform: uppercase;
 
   color: $title-text-color;
+  
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .benefits__text {
   color: $paragraph-color;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.71;
 
   letter-spacing: 0.03em;
 }

@@ -82,7 +82,7 @@
       <nav class="navigation-menu">
         <ul class="menu list">
           <li class="menu__item">
-            <a class="menu__link" href="#">Студия</a>
+            <a class="menu__link" href="./index.html">Студия</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="./portfolio.html">Портфолио</a>
@@ -777,24 +777,7 @@
       </div>
     </div>
     <script src="./js/menu.js">
-      const refs = {
-        openModalBtn: document.querySelector("[data-open-modal]"),
-        closeModalBtn: document.querySelector("[data-close-modal]"),
-        backdrop: document.querySelector("[data-backdrop]"),
-      };
-
-      refs.openModalBtn.addEventListener("click", toggleModal);
-      refs.closeModalBtn.addEventListener("click", toggleModal);
-
-      refs.backdrop.addEventListener("click", logBackdropClick);
-
-      function toggleModal() {
-        refs.backdrop.classList.toggle("is-hidden");
-      }
-
-      function logBackdropClick() {
-        console.log("Это клик в бекдроп");
-      }
+      
     </script>
     <script>
       const refs = {
